@@ -128,8 +128,6 @@ function getReviewByIndex(reviews, index) {
   return `${reviews[index].name} gave the restaurant a ${reviews[index].rating} a star review, and their feed back was: ${reviews[index].feedback}`
 }
 
-console.log(getReviewByIndex(reviews,0))
-
   
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -143,9 +141,11 @@ Use the getLastReview function below to do the following:
 */
 
 
-function getLastReview(/*Your code here*/) {
-  /*Your code here*/
+function getLastReview(arr) {
+  const index = arr.length - 1;
+  return getReviewByIndex(arr,index)
 } 
+console.log('poopy ' + getLastReview(reviews))
 
 
 
